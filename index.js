@@ -6,7 +6,9 @@ const keys = require('./keys');
 
 
 const port = process.env.PORT || 3000;
+console.log('port', port);
 const clientPath = path.join(__dirname, 'client');
+
 
 
 mongoose.connect(keys.mongoURI,{ useNewUrlParser: true , useUnifiedTopology: true})

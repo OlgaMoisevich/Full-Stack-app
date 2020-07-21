@@ -7,6 +7,7 @@ const Post = require('../models/Post');
 router.get('/', async (req, res) =>{
     console.log('req', req);
      const posts = await Post.find({});
+     console.log('posts', posts);
      res.status(200).json(posts);
 });
 //http://localhost:3000/api/post  (POST)
